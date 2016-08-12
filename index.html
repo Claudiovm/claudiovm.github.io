@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+     <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/modal.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+     <link rel='shortcut icon' type="image/x-icon" href="img/favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">    
+                <a href="#top" onclick=$("#menu-close").click();>Olimpiadas 2016</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home <i class="fa f fa-home fa-stack-1x icon-bc-white"></i></a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>¿Que son? <i class="fa fa-question icon-bc-white"></i></a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Lo que debes saber <i class="fa fa-info icon-bc-white"></i></a>
+            </li>
+            <li>
+                <a href="#anillos" onclick=$("#menu-close").click();>Los anillos <i class="fa fa-toggle-off icon-bc-white"></i></a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Ultimas Sedes <i class="fa  fa-smile-o icon-bc-white"></i></a>
+            </li>
+            <li>
+                <a href="#map_canvas" onclick=$("#menu-close").click();>Mapa<i class="fa fa-compass icon-bc-white"></i> </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Olimpiadas Brasil 2016</h1>
+            <h3>Enterate de lo que pasa en las olimpiadas!!</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Enterate ahora</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Las olimpiadas</h2>
+                    <p class="lead">Las Olimpíadas son uno de los eventos más importantes que actualmente se realizan ya que congregan a todos los países del planeta. Las Olimpíadas representan la unión de todos los pueblos que cada cuatro años se reúnen en un lugar designado para celebrar diferentes tipos de deportes y competir sanamente en diversas disciplinas.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Lo que debes saber</h2                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                   <i class="fa fa-circle fa-stack-2x"></i>
+                                   <i class="fa fa-question fa-stack-1x text-primary"></i>
+                                </span>
+                                <h4>
+                                   <strong>¿Por que se celebran cada 4 años?</strong>
+                                </h4>
+                                 <a href="#portfolioModal1" class="btn btn-light" data-toggle="modal">Enterate</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                   <i class="fa fa-circle fa-stack-2x"></i>
+                                   <i class="fa fa-history fa-stack-1x text-primary"></i>
+                                </span>
+                                <h4>
+                                    <strong>Primer año que se celebro</strong>
+                                </h4>
+                                 <a href="#portfolioModal2" class="btn btn-light" data-toggle="modal">Enterate</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-book fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Historia</strong>
+                                </h4>
+                                <a href="#portfolioModal3" class="btn btn-light" data-toggle="modal">Enterate</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-info fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Datos interesantes</strong>
+                                </h4>
+                                <a href="#portfolioModal4" class="btn btn-light" data-toggle="modal">Enterate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+                     
+
+
+    <!-- Callout -->
+    <section id="anillos">
+        <aside class="callout">
+            <div class="text-vertical-center">
+                 <h1 class="color-orange">¿Que representan los anillos?</h1>
+                 <h2 class="color-gray">Los aros olímpicos que tanto conocemos, representan los cinco continentes: Europa, Asia, África, Oceanía, y América
+                 </h2>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h3>Ultimas 4 Sedes Olimpicas</h3>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                    <h2>Beijing 2008</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <section id="Mira"> 
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3><a target="_blan" href="https://www.youtube.com/watch?v=ukc9I_EKYF4">Mira la inaguracion de las olimpiadas de Rio 2016</a></h3>
+                    </div>
+                </div>
+            </div>
+        <aside>
+    </section> 
+    <!-- Map -->
+    <section id="map_canvas" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=capital+de+brasil=m&amp;z=4&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            
+        </small>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Pagina hecha por:
+                      <br> Claudio Cesar Vazquez Melendez</strong>
+                    </h4>
+                    <p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:claudiovm010@gmail.com">Mail</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a target="_blan" href="https://www.facebook.com/claudio.vazquez.758"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy;</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>¿Porque se celebran cada 4 años?</h2>
+                       
+                          <img src="img/cabin.png" class="img-responsive img-centered" alt="">
+                            <p class="color">
+                               A partir del año 776 a.C., cuando se cree tuvo lugar el primer festival, los Juegos Olímpicos se han celebrado cada cuatrienio. Los Juegos que se llevaban acabo en Olimpia, Grecia, tenían un gran prestigio; los ganadores se convertían en héroes. 
+
+                               El lapso entre el inicio de un festival y otro se conocía como Olimpiada. En el año 300 a.C., los griegos confirmaron la importancia del festival fijando la fecha de cualquier evento de acuerdo con la Olimpiada en que sucedía. 
+
+                               Cuando se restauraron las Olimpiadas en 1894, los organizadores se inspiraron en los antiguos griegos y adoptaron el periodo de cuatro años. Sin embargo, no tuvieron éxito en revivir la costumbre de suspender las hostilidades durante los Juegos. En lugar de eso, no hay Olimpiadas durante la época de guerra. </p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Origenes de las olimpiadas</h2>
+                            <hr class="star-primary">
+                            <img src="img/cake.png" class="img-responsive img-centered" alt="">
+                            <p class="color2">Se cree que el primer año en el que se celebraron las olimpiadas fue en el año 776 a.C., en Olimpia, Grecia</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/circus.png" class="img-responsive img-centered" alt="">
+                            <p class="color3">Los Juegos Olímpicos, también conocidos como Olimpiadas, tratan hoy en día el enfrentamiento deportivo entre muy diversos países de todo el mundo. Pero, ¿Cómo y de que manera se formaron estos juegos? ¿Cómo llegamos a los Juegos Olímpicos modernos y cómo se formaron?
+
+                            Juegos Olímpicos de la antigüedad:Antecedentes
+
+                            Según está registrado oficialmente, fue un 1 de Julio del año 776 A.C. cuando nacieron las olimpiadas, nombre atribuido por la ciudad griega donde se inauguraron estos Juegos Olímpicos: Olimpia.
+
+                            Así pues, la tradicional competición deportiva cuenta, como mínimo, con tres mil años de historia y se organizaba cada cuatro años. Aunque cabe destacar la posibilidad de que estos Juegos Olímpicos se remontaran a una época aun más lejana en el tiempo, ya que existen indicios en distintas leyendas que apuntan a que, sin ser oficiales ni estar registradas, sí se celebraban competiciones antes de las celebradas en el año 776 A.C.
+
+                            Ya en aquella inauguración de finales del siglo octavo antes de Cristo, celebrada al pie del monte Kronion, se reunieron diferentes atletas procedentes de distintas regiones de Grecia que competían entre sí, descalzos y sin ropa, en diversas especialidades deportivas de la época. </p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/interesante.jpg" class="img-responsive img-centered" alt="">
+                            <p class="color3">1. Juegos Olímpicos desnudos
+
+
+                            Entre los deportes, está la gimnasia, palabra que proviene de gymnos que significa desnudez. Esto, porque en la Antigua Grecia, los juegos olímpicos se realizaban desnudos, para resaltar la belleza de la figura humana.<br>
+
+                            2. Primera Maratón de la historia
+
+
+                            En el año 490 a.C. Atenas tuvo una batalla contra invasores persas, de la cual salió victoriosa. Filípides, un soldado griego, corrió desde Maratón hacia Atenas para dar la gran noticia, porque si no llegaba a tiempo, los atenienses quemarían la ciudad y matarían a los niños pensando que habían sido derrotados.
+
+                            Fueron aproximadamente 40 kilómetros que recorrió y sumado con la geografía llena de colinas, hizo que se fatigara. A pesar de esto logró llegar, con los pies ensangrentados a dar la gran noticia, pero fue lo único que alcanzó a hacer, porque cayó muerto en el acto. 
+
+                            En su honor, en los primeros Juegos Olímpicos modernos, en 1896, se hizo una carrera con una distancia muy similar a la recorrida por Filípides, todo esto en su conmemoración.<br>
+                            3. La distancia de la maratón actual se decidió para mantener a la Reina seca.
+
+
+                            Pero... ¿Por qué la distancia oficial de la Maratón tiene más de 2 kilómetros extra? Esto fue porque a lo largo de los años, dependiendo del lugar donde se realizaran los Juegos Olímpicos, la distancia se iba modificando, pero llegó un punto en que decidieron oficializar la distancia. 
+
+                            Esto fue hasta los Juegos Olímpicos de Londres en 1908, porque primero se fijaron 38 km, pero se dice que el Príncipe de Gales, Jorge V, quiso la salida antes, en el Castillo de Windsor porque ese día llovía y no querían que la Reina se mojara. La distancia quedó en 42,195 kilómetros, la cual finalmente se oficializó.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+   
+   function initialize() {
+    var myOptions = {
+        zoom: 4,
+        center: new google.maps.LatLng(-22.9139165,-43.2359583),
+        scrollwheel: false
+    };
+
+    var map = new google.maps.Map(document.getElementById('map_canvas'),
+        myOptions);
+
+    var marker = new google.maps.Marker({
+        position: map.getCenter(),
+        title: 'Estadio Maracana',
+        map: map,
+    });
+    var marker2 = new google.maps.Marker({
+        position: new google.maps.LatLng(-15.7217174,-48.0783217),
+        title: 'Estadio Maracana',
+        map: map,
+    });
+     var marker3 = new google.maps.Marker({
+        position: new google.maps.LatLng(-18.8934042,-48.2703046),
+         title: 'Hello World!',
+        map: map,
+    });
+     var marker4 = new google.maps.Marker({
+        position: new google.maps.LatLng(-23.6821604,-46.8754885),
+         title: 'Hello World!',
+        map: map,
+    });
+     var marker5 = new google.maps.Marker({
+        position: new google.maps.LatLng(-12.8808976,-38.557671),
+         title: 'Hello World!',
+        map: map,
+    });
+     var marker6 = new google.maps.Marker({
+        position: new google.maps.LatLng(-10.8832496,-45.2234188),
+         title: 'Hello World!',
+        map: map,
+    });
+}
+    google.maps.event.addDomListener(window, 'load', initialize);
+ $('.map').on('click', onMapClickHandler);
+    </script>
+
+</body>
+
+</html>
